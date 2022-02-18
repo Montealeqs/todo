@@ -1,8 +1,20 @@
-function TodoForm(){
+import { useState } from "react";
+import './TodoForm.css';
+
+function TodoForm({onAdd}){
+        const [text,setText]=useState("");
     return(
-        <form>
-            <input type="text" />
-            <button>Add</button>
+        <form className="todoAppForm" onSubmit={(e)=>{
+            e.preventDefault();
+            if(!text.trim()) return;
+            onAdd(text);
+            setText("")
+        }}>
+            <input className="todoInput" type="text" value={text} onChange={(e)=>{
+                setText(e.target.value);{
+                }
+            }} />
+            <button className="todoAppAddButton">Add</button>
         </form>
     )
 
