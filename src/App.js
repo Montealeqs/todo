@@ -8,17 +8,32 @@ function App() {
   const [todos, setTodos]= useState([
     {
       id:Math.random(),
-      text: "BMW",
+      text: "08:00 run in the morning",
       isCompleted:false
     },
     {
       id:Math.random(),
-      text: "AUDI",
+      text: "11:00 go to work",
       isCompleted:false
     }  ,
     {
       id:Math.random(),
-      text: "VOLVO",
+      text: "14:00 meeting with employees",
+      isCompleted:false
+    } , 
+    {
+      id:Math.random(),
+      text: "17:00 break",
+      isCompleted:false
+    },
+    {
+      id:Math.random(),
+      text: "20:00 to go home",
+      isCompleted:false
+    }  ,
+    {
+      id:Math.random(),
+      text: "23:00 sleep",
       isCompleted:false
     }  
  ]);
